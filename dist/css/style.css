@@ -87,7 +87,7 @@ header {
 .header__title {
   font-weight: 300;
   font-size: 130px;
-  margin-bottom: -22px;
+  margin-bottom: -21px;
   color: #b7dcff;
 }
 
@@ -109,14 +109,15 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-color: #2688FC;
-  width: 102px;
-  height: 102px;
+  width: 94px;
+  height: 94px;
   border-radius: 50%;
   cursor: pointer;
   margin: 0px auto 30px auto;
   -webkit-transition: all 120ms linear;
   -o-transition: all 120ms linear;
   transition: all 120ms linear;
+  opacity: 0.7;
 }
 
 .play-icon:hover {
@@ -124,17 +125,18 @@ header {
   -o-transition: all 200ms linear;
   transition: all 200ms linear;
   background-color: #b7dcff;
-  -webkit-transform: scale(1.07);
-      -ms-transform: scale(1.07);
-          transform: scale(1.07);
+  -webkit-transform: scale(1.09);
+      -ms-transform: scale(1.09);
+          transform: scale(1.09);
+  opacity: 1;
 }
 
 .play-icon__triangle {
-  margin-right: -9px;
+  margin-right: -10px;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 22px 0px 22px 40px;
+  border-width: 19px 0px 19px 34px;
   border-color: transparent transparent transparent #3E4FE8;
 }
 
@@ -142,6 +144,7 @@ header {
   display: block;
   max-width: 240px;
   padding: 14px 30px 12px 30px;
+  border: 1px solid #3E4FE8;
   border-radius: 34px;
   margin: 0 auto;
   color: #b7dcff;
