@@ -60,6 +60,122 @@
 
 /* variables */
 
+* {
+  font-family: "Mukta", sans-serif;
+}
+
 body {
-  font-family: "Mukta";
+  background-color: #3E4FE8;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3E4FE8), to(#2938B8));
+  background-image: -o-linear-gradient(top, #3E4FE8 0%, #2938B8 100%);
+  background-image: linear-gradient(to bottom, #3E4FE8 0%, #2938B8 100%);
+}
+
+header,
+section,
+footer {
+  height: 100vh;
+  padding: 10vh 0 20vh 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  padding: 28vh 0 20vh 0;
+}
+
+.header__title {
+  font-weight: 300;
+  font-size: 130px;
+  margin-bottom: -22px;
+  color: #b7dcff;
+}
+
+.header__text {
+  font-size: 42px;
+  font-weight: 200;
+  color: #2688FC;
+  margin-bottom: 11px;
+}
+
+.play-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2688FC;
+  width: 102px;
+  height: 102px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0px auto 30px auto;
+  -webkit-transition: all 120ms linear;
+  -o-transition: all 120ms linear;
+  transition: all 120ms linear;
+}
+
+.play-icon:hover {
+  -webkit-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+  background-color: #b7dcff;
+  -webkit-transform: scale(1.07);
+      -ms-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.play-icon__triangle {
+  margin-right: -9px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 22px 0px 22px 40px;
+  border-color: transparent transparent transparent #3E4FE8;
+}
+
+.button-primary {
+  display: block;
+  max-width: 240px;
+  padding: 14px 30px 12px 30px;
+  border-radius: 34px;
+  margin: 0 auto;
+  color: #b7dcff;
+  background-color: #2688FC;
+  font-size: 26px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 120ms linear;
+  -o-transition: all 120ms linear;
+  transition: all 120ms linear;
+}
+
+.button-primary:hover {
+  -webkit-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+  background-color: #b7dcff;
+  color: #3E4FE8;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
