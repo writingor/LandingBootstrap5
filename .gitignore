@@ -5,3 +5,4 @@ package.json
 package-lock.json
 LandingBootstrap5.zip
 gulpfile.js
+dist/
